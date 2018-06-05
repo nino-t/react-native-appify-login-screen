@@ -36,8 +36,12 @@ class FirstScreen extends React.Component{
 					</View>					
 
 					<View style={{ position: 'absolute', bottom: 40, width: '100%', flexDirection: 'row'}}>
-						<Text style={styles.textBottom}>SIGN IN</Text>
-						<Text style={styles.textBottom}>SIGN UP</Text>
+						<Text 
+							style={styles.textBottom}
+							onPress={() => this.props.navigation.navigate('SignIn')}>SIGN IN</Text>
+						<Text 
+							style={styles.textBottom}
+							onPress={() => this.props.navigation.navigate('SignUp')}>SIGN UP</Text>
 					</View>
 				</View>
 			</View>

@@ -1,13 +1,13 @@
 import React from 'react'
 import { StyleSheet, View, Text, StatusBar, TextInput, CheckBox } from 'react-native'
 
-import background from '../../assets/img/c.jpg'
+import background from '../../assets/img/b.jpg'
 import BackgroundComponent from '../../components/BackgroundComponent'
 
 import RoundCheckbox from 'rn-round-checkbox'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-class LoginScreen extends React.Component{
+class RegisterScreen extends React.Component{
   constructor(props) {
     super(props);
   
@@ -26,13 +26,13 @@ class LoginScreen extends React.Component{
           <Text style={styles.textTitle}>Appify</Text>
           <Text style={styles.textSubTitle}>MOBILE APPLICATION</Text>
 
-          <View style={{ flexDirection:'column', marginTop: 50, justifyContent: 'center'}}>
-            <Text style={styles.textLogin}>Sign in to continue</Text>
+          <View style={{ flexDirection:'column', marginTop: 30, justifyContent: 'center'}}>
+            <Text style={styles.textLogin}>Create Account</Text>
 
             <TextInput
               style={styles.textInput}
               underlineColorAndroid='transparent'
-              placeholder='E-Mail'
+              placeholder='E-Mail Address'
               placeholderTextColor='#fff' />
 
             <TextInput
@@ -42,31 +42,22 @@ class LoginScreen extends React.Component{
               placeholder='Password'
               placeholderTextColor='#fff' />              
 
-            <View style={{ flexDirection:'row'}}>
-              <View style={{ flex:1, flexDirection:'row' }}>
-                <RoundCheckbox
-                  backgroundColor="#fff"
-                  iconColor="#2c3e50"
-                  size={20}
-                  onValueChange={() => { this.setState({ remember: !this.state.remember }) }}
-                  checked={this.state.remember} />
-
-                <Text style={[styles.textWhite, { marginLeft: 5 }]}>Remeber</Text>
-              </View>
-              <View style={{ flex:1 }}>
-                <Text style={ [styles.textWhite, {alignSelf: 'flex-end'}] }>Forget Password</Text>
-              </View>
-            </View>
+            <TextInput
+              secureTextEntry={true}
+              style={styles.textInput}
+              underlineColorAndroid='transparent'
+              placeholder='Confirm Password'
+              placeholderTextColor='#fff' />              
 
             <View style={styles.btnSignin}>
-              <Text style={styles.textBtnSignin}>SIGN IN</Text>
+              <Text style={styles.textBtnSignin}>SIGN UP</Text>
             </View>
           </View>         
 
           <View style={{ justifyContent: 'flex-end', flex: 1, paddingBottom: 40 }}>
             <Text 
               style={styles.textBottom}
-              onPress={() => this.props.navigation.navigate('SignUp')}>SIGN UP</Text>
+              onPress={() => this.props.navigation.navigate('SignIn')}>SIGN IN</Text>
           </View>
         </View>
       </View>
@@ -74,11 +65,11 @@ class LoginScreen extends React.Component{
   }
 }
 
-export default LoginScreen
+export default RegisterScreen
 
 const styles = StyleSheet.create({
   container: {
-      paddingTop: 100,
+    paddingTop: 100,
     position: 'absolute',
     top: 0,
     bottom: 0,

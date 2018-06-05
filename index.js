@@ -1,6 +1,4 @@
-import { AppRegistry } from 'react-native';
+import { AppRegistry } from 'react-native'
+import App from './src/App'
 
-import FirstScreen from './src/screens/FirstScreen'
-import LoginScreen from './src/screens/LoginScreen'
-
-AppRegistry.registerComponent('appify', () => LoginScreen);
+AppRegistry.registerComponent('appify', () => App)
