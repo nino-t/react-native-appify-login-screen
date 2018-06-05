@@ -1,7 +1,7 @@
 # react-native-login-screen
-![demo](https://github.com/nino-t/react-native-appify-login-screen/blob/master/demo/1.jpg)
-![demo](https://github.com/nino-t/react-native-appify-login-screen/blob/master/demo/2.jpg)
-![demo](https://github.com/nino-t/react-native-appify-login-screen/blob/master/demo/3.jpg)
+![demo](https://github.com/nino-t/react-native-appify-login-screen/blob/master/demo/1.jpg =100x200)
+![demo](https://github.com/nino-t/react-native-appify-login-screen/blob/master/demo/2.jpg =100x200)
+![demo](https://github.com/nino-t/react-native-appify-login-screen/blob/master/demo/3.jpg =100x200)
 
 ## Install at local
 Open Terminal, then type command:  
